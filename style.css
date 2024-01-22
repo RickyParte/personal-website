@@ -179,6 +179,8 @@ body {
     width: 100%;
 }
 
+
+
 .skills {
     display: flex;
     flex-direction: column;
@@ -701,76 +703,32 @@ body {
     color: var(--text-color);
 }
 
-.certificate-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2rem;
-    justify-content: space-between;
-    text-align: center;
-}
-
-
-.cer-img{
-    height: 5rem;
-    width: auto;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-
-.certificate-img{
-    color: var(--primary-color);
+.certi-profiles-logo{
     font-size: 1rem;
-    
+    font-weight: 500;
+    color: var(--gray);
+    display: flex;
+    gap: 0.5rem;
 }
 
-.text{
-    background-color: var(--primary-color);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    padding: 16px 32px;
-    text-align: center;
-  }
-
-  .display {
-    transition: .5s ease;
-    opacity: 0;
-    text-align: center;
-  }
-
-  .img-container:hover .cer-img{
-    opacity: 0.3;
-  }
-  
-  .img-container:hover .display{
-    opacity: 1;
-  }
-
-
-
-@media screen and (max-width: 500px) {
-    
-    .cer-img.udemy{
-        height: 5rem;
-    }
-
-
-    .cer-img{
-        height: 2rem;
-        width: auto;
-    }
-
-    .certificate-title{
-        font-size: 1.875rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    .certificate-img{
-        margin-top: 2rem;
-        
-    }
+.certi-svg-img{
+    height: 1.7rem;
 }
+
+.certi-logo-txt{
+    font-size: 1rem; 
+}
+
+.certi-profile-link {
+    color: var(--primary-color);
+    transform: color 0.1s;
+}
+
+.certi-profile-link:hover {
+    color: var(--gray);
+    transform: color 0.1s;
+}
+
 
 .profiles-container{
     display: flex;
@@ -818,6 +776,9 @@ body {
         font-size: 1.7rem;
         font-weight: bold;
         color: var(--text-color);
+    }
+    .certi-profile-link{
+        font-size: 1.5rem; 
     }
 }
 
